@@ -1,0 +1,127 @@
+/* Global style for using Merriweather font */
+body {
+  font-family: 'Merriweather', serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Ensure the video doesn't cause a scroll */
+  height: 100vh; /* Full viewport height */
+  background-color: rgb(5, 5, 10); /* Initial background */
+ 
+}
+/* Keyframes for the background color transition */
+
+
+/* Root container */
+#root {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  z-index: 2; /* Ensure content is above the video */
+  color: white; /* Ensure text is readable on dark background */
+}
+
+/* Full-screen video background */
+.video-background {
+  position: fixed; /* Make the video fixed in place */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Make video width 100% of viewport width */
+  height: 100vh; /* Make video height 100% of viewport height */
+  object-fit: cover; /* Ensure the video covers the whole screen */
+  filter: blur(8px); /* Apply the blur effect */
+  z-index: -1; /* Make sure the video is behind the content */
+}
+
+/* Glowing gold text style */
+.glow {
+  font-size: 3rem;
+  font-weight: bold;
+  color: transparent;
+  background-clip: text;
+  animation: typing 4s steps(12) 1s 1 normal both, glow 1.5s ease-in-out infinite alternate;
+}
+
+/* Keyframes for typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Keyframes for glowing effect */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #f93d1c, 0 0 10px #92f91c, 0 0 15px #321cf9, 0 0 20px #c51cf9, 0 0 30px #f91c5e, 0 0 40px #f9d71c, 0 0 50px #1c2bf9;
+  }
+  100% {
+    text-shadow: 0 0 5px #f700ff, 0 0 10px #00ffdd, 0 0 15px #00ff00, 0 0 20px #ff0000, 0 0 30px #00fff2, 0 0 40px #ffcc004d, 0 0 50px #cc00ff;
+  }
+}
+
+/* Style for the image */
+.image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Make the image round */
+  object-fit: cover;
+  animation: rotateAnimation 10s linear infinite; /* Circular motion */
+  transition: box-shadow 0.3s ease; /* Smooth transition for the glowing effect */
+}
+
+/* Keyframes for rotating the image in a circular path */
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Glowing effect when clicked */
+.image.clicked {
+  box-shadow: 0 0 20px 10px red; /* Red glow */
+}
+
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  background-color: #241b1f; /* Light reddish-pinkish color */
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #5c1e3d; /* Slightly brighter on hover */
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.7); /* Glowing effect */
+}
+
+/* Top-right welcome message */
+.welcome-message {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  animation: typingMessage 2s steps(30) 1 normal forwards; /* Typing effect runs once */
+}
+
+/* Keyframe for typing effect */
+@keyframes typingMessage {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

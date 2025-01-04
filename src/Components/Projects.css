@@ -1,0 +1,146 @@
+/* Project container and general styling */
+.project-container {
+    position: relative; /* To allow positioning of the overlay */
+    padding: 20px;
+    text-align: center;
+    overflow: hidden; /* Ensure that nothing overflows */
+  }
+  
+  .project-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 0, 0, 0.7), rgba(0, 0, 0, 0.8)); /* Red to black gradient */
+    filter: blur(8px); /* Apply blur */
+    z-index: -1; /* Make sure the overlay stays behind the content */
+  }
+  
+  /* Featured Blogs Title */
+  .featured-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffcc00;
+  }
+  
+  /* Featured Blogs Description */
+  .featured-blogs {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 40px;
+    color: #d1d1d1;
+  }
+  
+  /* Project Gallery */
+  .project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Project Card */
+  .project-card {
+    position: relative;
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 20s ease;
+    animation: popOut 4s ease-out 0s forwards;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Pop-out Animation */
+  @keyframes popOut {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    /* Adding a delay for 30 seconds before settling the animation */
+  }
+  
+  /* Image Styling */
+  .project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    animation: popIn 1s ease-out 0s forwards;
+  }
+  
+  @keyframes popIn {
+    0% {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(-10px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* GitHub Icon Overlay */
+  .github-icon-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    animation: popIn 1.2s ease-out 0s forwards;
+  }
+  
+  .project-card:hover .github-icon-overlay {
+    opacity: 1;
+  }
+  
+  .github-icon-overlay a {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .github-icon-overlay a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Project Description */
+  .project-description {
+    padding: 15px;
+    animation: popIn 1.5s ease-out 0s forwards;
+  }
+  
+  .description-text {
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .languages-used {
+    font-size: 1rem;
+    color: #d1d1d1;
+  }
+  
+  .languages-used strong {
+    color: #ffcc00;
+  }
+  
