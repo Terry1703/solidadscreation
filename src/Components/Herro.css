@@ -1,0 +1,103 @@
+/* Ensure full height of hero section */
+.herro-section {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(8px); /* Blur effect */
+    z-index: -1; /* Keep the video in the background */
+  }
+  
+  .welcome-message {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .title-section {
+    margin-top: 20px;
+  }
+  
+  .glow-title {
+    font-size: 3rem;
+    color: transparent;
+    background-clip: text;
+    animation: typing 4s steps(12) 1s normal forwards, glow 1.5s ease-in-out infinite alternate;
+  }
+  
+  .sub-heading {
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 10px;
+  }
+  
+  .welcome-btn {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #241b1f;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .welcome-btn:hover {
+    background-color: #5c1e3d;
+  }
+  
+  /* Scroll Down Arrow Styling */
+  .scroll-down-arrow {
+    position: absolute;
+    bottom: 30px;
+    font-size: 2rem;
+    color: white;
+    animation: bounce 1.5s infinite;
+    cursor: pointer;
+  }
+  
+  /* Bounce animation for the arrow */
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Keyframes for typing animation */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  /* Glowing effect keyframe */
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 5px #f93d1c, 0 0 10px #92f91c, 0 0 15px #321cf9, 0 0 20px #c51cf9, 0 0 30px #f91c5e, 0 0 40px #f9d71c, 0 0 50px #1c2bf9;
+    }
+    100% {
+      text-shadow: 0 0 5px #f700ff, 0 0 10px #00ffdd, 0 0 15px #00ff00, 0 0 20px #ff0000, 0 0 30px #00fff2, 0 0 40px #ffcc004d, 0 0 50px #cc00ff;
+    }
+  }
+  

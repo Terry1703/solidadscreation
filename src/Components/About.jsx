@@ -1,12 +1,16 @@
-// About.js
+// src/About.jsx
 import React from 'react';
 
 const About = () => {
   return (
-    <div>
+    <section className="about-me">
       <h2>About Me</h2>
-      <p>This is the About section. Add more info here!</p>
-    </div>
+      <p>
+        I am a passionate Full-Stack Developer with experience in React, Flask, and PostgreSQL. 
+        I love building robust, scalable applications and continuously improving my skills. 
+        My journey in tech has been fulfilling, and I’m eager to take on new challenges.
+      </p>
+    </section>
   );
 };
 

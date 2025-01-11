@@ -1,0 +1,83 @@
+/* Styling for the skills title */
+.skills-title {
+    text-align: center;
+    color: rgb(18, 8, 8);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase; /* Optional: makes the title more impactful */
+    animation: spin-sideways 6s infinite linear, glow 1.5s ease-in-out infinite alternate; /* Adds both spinning and glowing effects */
+    display: inline-block;
+    padding: 10px;
+    filter: drop-shadow(0 0 5px rgb(63, 46, 192)); /* Red glow around the title */
+    transform-style: preserve-3d; /* Ensures 3D transformation */
+  }
+  
+  /* Spinning animation (sideways rotation) */
+  @keyframes spin-sideways {
+    0% {
+      transform: rotateX(0deg); /* Rotate on X-axis from 0 degrees */
+    }
+    100% {
+      transform: rotateX(360deg); /* Complete a 360-degree rotation on X-axis */
+    }
+  }
+  
+  /* Glowing animation */
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 10px rgb(79, 91, 181), 0 0 20px red, 0 0 30px black, 0 0 40px black;
+    }
+    100% {
+      text-shadow: 0 0 20px red, 0 0 30px red, 0 0 40px black, 0 0 50px black;
+    }
+  }
+  
+  /* Style for the list of skills (cards) */
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style for individual skill cards */
+  .skill-card {
+    background-color: rgb(24, 1, 1);
+    border: 2px solid blue; /* Blue border for each card */
+    border-radius: 50px; /* Makes the card cylindrical */
+    padding: 15px;
+    width: 150px;
+    height: 200px; /* Adjust height for cylindrical shape */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Hover effect for each card */
+  .skill-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(175, 22, 22, 0.2);
+  }
+  
+  /* Style for the images in each card */
+  .skill-image {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    /* Removed the spinning animation */
+  }
+  
+  /* Style for the text under each image */
+  .skill-card p {
+    font-size: 1rem;
+    color: rgb(240, 238, 238);
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  

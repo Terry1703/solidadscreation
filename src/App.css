@@ -5,11 +5,11 @@ body {
   padding: 0;
   overflow: hidden; /* Ensure the video doesn't cause a scroll */
   height: 100vh; /* Full viewport height */
-  background-color: rgb(5, 5, 10); /* Initial background */
- 
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaHhxHQ-t30p3xtQduXLNwUtTqP9_5YYSREQ&s');
+  background-size: cover; /* Ensure the image covers the full screen */
+  background-position: center; /* Center the image *//* Apply the blur effect to the background image */
+  position: relative; /* Necessary for the content above the background */
 }
-/* Keyframes for the background color transition */
-
 
 /* Root container */
 #root {
@@ -40,27 +40,7 @@ body {
   font-weight: bold;
   color: transparent;
   background-clip: text;
-  animation: typing 4s steps(12) 1s 1 normal both, glow 1.5s ease-in-out infinite alternate;
-}
-
-/* Keyframes for typing effect */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-/* Keyframes for glowing effect */
-@keyframes glow {
-  0% {
-    text-shadow: 0 0 5px #f93d1c, 0 0 10px #92f91c, 0 0 15px #321cf9, 0 0 20px #c51cf9, 0 0 30px #f91c5e, 0 0 40px #f9d71c, 0 0 50px #1c2bf9;
-  }
-  100% {
-    text-shadow: 0 0 5px #f700ff, 0 0 10px #00ffdd, 0 0 15px #00ff00, 0 0 20px #ff0000, 0 0 30px #00fff2, 0 0 40px #ffcc004d, 0 0 50px #cc00ff;
-  }
+  
 }
 
 /* Style for the image */
@@ -112,8 +92,8 @@ button:hover {
   right: 20px;
   font-size: 1.5rem;
   font-weight: bold;
-  color: white;
-  animation: typingMessage 2s steps(30) 1 normal forwards; /* Typing effect runs once */
+  color: rgb(18, 3, 3);
+  animation: typingMessage 3s steps(30) 1 normal forwards; /* Typing effect runs once */
 }
 
 /* Keyframe for typing effect */
@@ -124,4 +104,9 @@ button:hover {
   to {
     width: 100%;
   }
+}
+
+h1 {
+  
+  color: rgb(32, 18, 2);
 }
