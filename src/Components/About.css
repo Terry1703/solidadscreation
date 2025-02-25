@@ -1,0 +1,17 @@
+.about-me {
+    background-image: url('https://plus.unsplash.com/premium_photo-1737697221644-00dbb4578aca?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzM3x8fGVufDB8fHx8fA%3D%3D'); /* Replace with the correct path to your image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px;
+    color: white; /* Change the text color to ensure visibility against the background */
+}
+
+.about-me h2, .about-me h1 {
+    font-family: 'Arial', sans-serif;
+}
+
+.about-me p {
+    font-size: 18px;
+    line-height: 1.6;
+}

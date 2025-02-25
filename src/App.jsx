@@ -5,9 +5,9 @@ import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import Projects from './Components/Projects';
 import Skills from './Components/Skills';  // Import the Skills component
-//import About from './Components/About'; // Create About component
-//import Profile from './Components/Profile'; // Create Profile component
-//import Resume from './Components/Resume'; // Create Resume component
+import About from './Components/About';
+import ProfilePage from './Components/ProfilePage'; // Import ProfilePage component
+// import Resume from './Components/Resume'; // Create Resume component (if needed)
 import 'font-awesome/css/font-awesome.min.css';
 
 function App() {
@@ -22,6 +22,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/skills" element={<Skills />} /> {/* Add route for Skills */}
+        <Route path="/about" element={<About />} /> {/* Add route for About */}
+        <Route path="/profile" element={<ProfilePage />} /> {/* Add route for ProfilePage */}
       </Routes>
     </Router>
   );

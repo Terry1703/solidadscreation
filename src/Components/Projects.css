@@ -3,6 +3,7 @@
     position: relative; /* To allow positioning of the overlay */
     padding: 20px;
     text-align: center;
+    height: 95vh;
     overflow: hidden; /* Ensure that nothing overflows */
   }
   

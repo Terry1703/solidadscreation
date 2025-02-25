@@ -1,0 +1,173 @@
+/* ProfilePage.css */
+.profile-page {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: rgb(189, 49, 49);
+    min-height: 100vh;
+    padding-top: 40px;
+  }
+  
+  .profile-container {
+    background-color: #0b0c0b;
+    border-radius: 1rem;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(145, 63, 63, 0.1);
+    padding: 3rem;
+    width: 150vh;
+    max-width: 900px;
+    height: 80vh;
+  }
+  
+  .profile-header {
+    text-align: center;
+  }
+  
+  .profile-img-container {
+    margin-bottom: 1.5rem;
+  }
+  
+  .profile-image {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-info {
+    margin-left: 1.5rem;
+    text-align: left;
+  }
+  
+  .profile-username {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f3ebea;
+    margin-bottom: 1rem;
+  }
+  
+  .edit-profile-btn {
+    background-color: #2d5d2d;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .profile-stats {
+    color: #f1e9e9;
+    margin-bottom: 1.5rem;
+  }
+  
+  .stats-link {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .stats-divider {
+    margin: 0 1rem;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 30%;
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2f6d2f;
+    margin-bottom: 1rem;
+  }
+  
+  .modal-close-btn {
+    background-color: #f8ecec;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .posts-container {
+    margin-top: 3rem;
+  }
+  
+  .posts-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .posts-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2f6d2f;
+  }
+  
+  .write-btn {
+    background-color: #2f6d2f;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .post-card {
+    background-color: rgb(49, 49, 49);
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    position: absolute;
+    align-items: center;
+  }
+  
+  .post-image {
+    width: 12rem;
+    height: 11rem;
+    border-radius: 50%;
+  }
+  
+  .post-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0f0e0d;
+    margin-top: 1rem;
+  }
+  
+  .post-stats {
+    color: #f7f2f2;
+    margin-top: 1rem;
+  }
+  
+  .delete-btn {
+    background-color: #d32f2f;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }

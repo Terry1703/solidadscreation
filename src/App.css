@@ -108,5 +108,11 @@ button:hover {
 
 h1 {
   
-  color: rgb(32, 18, 2);
+  color: rgb(112, 85, 85);
+}
+h3 {
+  color: black;
+}
+h4 {
+  color: gold;
 }
