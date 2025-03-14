@@ -1,17 +1,52 @@
 .about-me {
-    background-image: url('https://plus.unsplash.com/premium_photo-1737697221644-00dbb4578aca?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzM3x8fGVufDB8fHx8fA%3D%3D'); /* Replace with the correct path to your image */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 50px;
-    color: white; /* Change the text color to ensure visibility against the background */
-}
-
-.about-me h2, .about-me h1 {
-    font-family: 'Arial', sans-serif;
-}
-
-.about-me p {
-    font-size: 18px;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #c7c4c4;
+    color: #333;
+  }
+  
+  .about-me h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #222;
+  }
+  
+  .about-me p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
     line-height: 1.6;
-}
+  }
+  
+  .about-details {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card h2 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  

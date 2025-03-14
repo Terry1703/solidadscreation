@@ -5,7 +5,7 @@ body {
   padding: 0;
   overflow: hidden; /* Ensure the video doesn't cause a scroll */
   height: 100vh; /* Full viewport height */
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaHhxHQ-t30p3xtQduXLNwUtTqP9_5YYSREQ&s');
+ background-color: black;
   background-size: cover; /* Ensure the image covers the full screen */
   background-position: center; /* Center the image *//* Apply the blur effect to the background image */
   position: relative; /* Necessary for the content above the background */

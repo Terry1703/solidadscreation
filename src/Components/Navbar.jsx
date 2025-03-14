@@ -9,8 +9,7 @@ const Navbar = () => {
         <li><Link to="/projects">Projects</Link></li>
         <li><Link to="/skills">Skills</Link></li> {/* Link to the Skills page */}
         <li><Link to="/about">About</Link></li> {/* Link to the About page */}
-        <li><Link to="/profile">Profile</Link></li> {/* Link to the Profile page */}
-        <li><Link to="/resume">Resume</Link></li> {/* Link to the Resume page */}
+      <li><Link to="/Contact">Contact</Link></li> {/* Link to the contact page */}
       </ul>
     </nav>
   );
