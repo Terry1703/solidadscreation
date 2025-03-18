@@ -66,3 +66,12 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.item {
+  flex: 1 1 300px; /* Flexible width with a minimum of 300px */
+  margin: 10px;
+}
